@@ -1,6 +1,7 @@
-node_modules
-Dockerfile
-package.json
-primes.js
-primes.txt
-primes.dat
+# Ignore everything
+**
+
+# Allow files and directories
+!/index.js
+!/primes.dat.gz
+!/package*.json

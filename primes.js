@@ -4,13 +4,12 @@ const outputFile = fs.createWriteStream('./output.dat', { flags: 'w' });
 
 const primes = inputFile.split(/[^0-9]+/);
 primes.shift();
-// gzip -k -9 output.dat
 
 (async () => {
-  let i = 0, num = 1;
+  let i = 0,
+    num = 1;
   let lastPrime = 0;
   const limit = 32452843;
-  // const limit = 10000;
   while (true) {
     const currentPrime = primes[i++];
 
