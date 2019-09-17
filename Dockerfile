@@ -7,7 +7,7 @@ WORKDIR /src
 # Set tini as entrypoint
 ENTRYPOINT ["/sbin/tini", "--"]
 # copy project file
-COPY package.json .
+COPY package*.json ./
 
 # ---- Dependencies ----
 FROM base AS dependencies
